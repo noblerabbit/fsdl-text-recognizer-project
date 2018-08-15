@@ -25,7 +25,7 @@ class Model:
         if network_args is None:
             network_args = {}
         self.network = network_fn(self.data.input_shape, self.data.output_shape, **network_args)
-        self.network.summary()
+        self.network.summary()_make_predict_function
 
         self.batch_augment_fn = None
         self.batch_format_fn = None
